@@ -1,1 +1,9 @@
-Simple ping-pong game on pygame
+Simple ping-pong game made with python.
+Controls:
+  player 1:
+    w - up, s - down
+  player 2:
+    ↑ - up, ↓ - down
+    
+This project is made with pygame.
+The objective of the game is to score as many goals as possible.
