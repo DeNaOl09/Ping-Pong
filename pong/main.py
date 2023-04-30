@@ -110,8 +110,11 @@ while game:
     first = font.render(str(player1.score), True, (255, 255, 255))
     second = font.render(str(player2.score), True, (255, 255, 255))
 
-    window.blit(first, (100, 100))
-    window.blit(second, (WIN_WIDTH-100, 100))
+    pg.draw.rect(window, (255, 255, 255), ((WIN_WIDTH//2)-15, 100, 40, 30), 3)
+    pg.draw.rect(window, (255, 255, 255), ((WIN_WIDTH//2)+3, 100, 3, 30))
+
+    window.blit(first, (WIN_WIDTH//2-10, 100))
+    window.blit(second, (WIN_WIDTH//2+10, 100))
 
     player1.update()
     player2.update()
